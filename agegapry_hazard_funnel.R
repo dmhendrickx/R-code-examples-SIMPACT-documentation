@@ -22,8 +22,8 @@ showAges <- function(cfg, path, seed){
   agesMen = list()
   agesWomen = list()
   for (r in 1:numRel){
-    idm = rel$IDm[r]
-    idw = rel$IDw[r]
+    idm = rel$ID1[r]
+    idw = rel$ID2[r]
     t = rel$FormTime[r]
     men = subset(ppl,ppl$ID == idm)
     women = subset(ppl,ppl$ID == idw)
